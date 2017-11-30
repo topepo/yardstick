@@ -28,4 +28,6 @@ Imports:
     pROC,
     MLmetrics,
     rlang,
-    tidyselect
+    tidyselect,
+    purrr,
+    rsample
