@@ -9,6 +9,16 @@
   )
   toset <- !(names(op.yardstick) %in% names(op))
   if (any(toset)) options(op.yardstick[toset])
+
+  invisible()
+}
+
+.onAttach <- function(libname, pkgname) {
+  packageStartupMessage(
+    "For binary classification, the first factor level is assumed to ",
+    "be the event.\nSet the global option `yardstick.event_first` ",
+    "to `FALSE` to change this.\n"
+  )
   
   invisible()
 }
