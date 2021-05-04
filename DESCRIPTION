@@ -23,10 +23,11 @@ BugReports: https://github.com/tidymodels/yardstick/issues
 Depends:
     R (>= 2.10)
 Imports:
-    dplyr (>= 0.8.5),
+    dplyr (>= 1.0.0),
     generics,
     pROC (>= 1.15.0),
     rlang (>= 0.4.0),
+    tidyr (>= 1.0.0),
     tidyselect,
     utils,
     vctrs (>= 0.3.6)
@@ -38,8 +39,8 @@ Suggests:
     probably (>= 0.0.6),
     purrr,
     rmarkdown,
-    testthat (>= 3.0.0),
-    tidyr
+    survival,
+    testthat (>= 3.0.0)
 VignetteBuilder: 
     knitr
 Encoding: UTF-8
